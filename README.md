@@ -24,12 +24,12 @@ Denial of Service attacks is a type of attack that prevent legitemate users from
 
 When using end to end encryption like SSL you need a pair of keys to encrypt the data, this is normally done by using 2 key encryption, this means that both the client and the server has 2 keys to encrypt, a public and a private key.  
 The client only knows the servers public key and vice versa, this way it is only the server or the client that can un encrypt the message from the other. This is how a basic transaction looks:  
-1. Client hello, client sends a hello message containing basic information like SSL/TLS version and a random byte string.
-2. Server hello, server responds with a hello message containg basic information like in client hello, a random byte string and a digital certificate.
-3. Client verification, the client verifies the certificate.
-4. Server verification, the clients send a certificate that the server verifies.
-5. Clients message, the client uses the random byte string(key) from the server to encrypt a message, then encrypt both the encrypted message and the key, using the servers public key, and sends it to the server.
-6. Server message, the server uses its private key to unencrypt the encrypted message and key, and uses the key to unencrypt the message. The server then does the same as the client using the clients public key and sends a message back.
+1. Client hello, client sends a hello message containing basic information like SSL/TLS version and a random byte string.  
+2. Server hello, server responds with a hello message containg basic information like in client hello, a random byte string and a digital certificate.  
+3. Client verification, the client verifies the certificate.  
+4. Server verification, the clients send a certificate that the server verifies.  
+5. Clients message, the client uses the random byte string(key) from the server to encrypt a message, then encrypt both the encrypted message and the key, using the servers public key, and sends it to the server.  
+6. Server message, the server uses its private key to unencrypt the encrypted message and key, and uses the key to unencrypt the message. The server then does the same as the client using the clients public key and sends a message back.  
 
 
 ### Question 4: Explain and demonstrate ways to protect user passwords on our backends, and why this is necessary
