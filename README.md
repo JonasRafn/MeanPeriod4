@@ -43,7 +43,7 @@ A way to counter hashing is a method called rainbow tables, this basically means
 ```
 hash("password") = 	5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
 hash("password" + "1234" = 	b9c950640e1b3740e98acb93e669c65766f6670dd1609ba91ff41052ba48c6f3
-````
+```
 The salt should never be reused and should be unique for every username-password combo.
 
 #### SHA1, MD5
